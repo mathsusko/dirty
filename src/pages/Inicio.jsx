@@ -169,7 +169,7 @@ export default function Inicio() {
                     <EnvelopeOpen size={24} />
                     <p>E-mail</p>
                   </div>
-                  <p>email@dollmaker.com.br</p>
+                  <p>email@dirty.com.br</p>
                 </div>
               </div>
 
@@ -177,7 +177,7 @@ export default function Inicio() {
                 <p>Redes sociais/Plataformas Musicais</p>
                 <div className={styles.icon}>
                   <a
-                    href="https://www.instagram.com/dollmakerlive/"
+                    href="https://www.instagram.com/dirty_distortionprog/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.instagramLink}
@@ -185,7 +185,7 @@ export default function Inicio() {
                     <InstagramLogo size={32} />
                   </a>
                   <a
-                    href="https://soundcloud.com/dollmakerlive"
+                    href="https://soundcloud.com/dirty-distortion/tracks"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.instagramLink}
@@ -193,7 +193,7 @@ export default function Inicio() {
                     <SoundcloudLogo size={32} />
                   </a>
                   <a
-                    href="https://open.spotify.com/intl-pt/artist/7dGmK4sImWkq5ClORKQwIL?si=X-98tm35QhOOQnoXXyuyfw"
+                    href="https://open.spotify.com/intl-pt/artist/2a8tqbHESJJc33xwGQ6bLA?si=94ced59a902d40c0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.instagramLink}
