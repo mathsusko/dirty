@@ -55,7 +55,7 @@ export default function Contato() {
 
             <div className={styles.rowTwo}>
               <p>Redes sociais/Plataformas musicais</p>
-              <div className={styles.icon}>
+              <div className={styles.icons}>
                 <a
                   href="https://www.instagram.com/dirty_distortionprog/"
                   target="_blank"
