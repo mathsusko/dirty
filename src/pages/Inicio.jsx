@@ -9,7 +9,8 @@ import {
   SpotifyLogo,
   SoundcloudLogo,
   InstagramLogo,
-  AsteriskSimple
+  AsteriskSimple,
+  YoutubeLogo
 } from '@phosphor-icons/react'
 
 export default function Inicio() {
@@ -40,10 +41,67 @@ export default function Inicio() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const contatoRef = useRef(null)
+
+  const handleScrollToContato = (event) => {
+    event.preventDefault()
+    contatoRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section>
       <article className={styles.bannerHero}></article>
+      <article className={styles.teste}>
+        <div className={styles.extra}>
+          <img
+            src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774495/dirty/graphics/gc3voukixodr0sdhjb45.png"
+            alt=""
+          />
+          <div className={styles.cardzin}>
+            <div className={styles.head}>
+              <p>Me siga</p>
+
+              <div className={styles.sociais}>
+                <a
+                  href="https://www.instagram.com/dirty_distortionprog/"
+                  target="_blank"
+                >
+                  <InstagramLogo size={32} />
+                </a>
+                <a
+                  href="https://soundcloud.com/dirty-distortion/tracks"
+                  target="_blank"
+                >
+                  <SoundcloudLogo size={32} />
+                </a>
+                <a
+                  href="https://open.spotify.com/artist/2a8tqbHESJJc33xwGQ6bLA?si=94ced59a902d40c0&nd=1&dlsi=47e94d31e29f4940"
+                  target="_blank"
+                >
+                  <SpotifyLogo size={32} />
+                </a>
+              </div>
+            </div>
+            <div className={styles.button}>
+              <a
+                href="#contato"
+                onClick={handleScrollToContato}
+              >
+                ENTRAR EM CONTATO
+              </a>
+            </div>
+          </div>
+          <img
+            src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774339/dirty/graphics/pyvpmhylfm8mchqd4ujj.png"
+            alt=""
+          />
+        </div>
+      </article>
       <article className={styles.content}>
+        <div className={styles.bgFixed}>
+          <div className={styles.circleBlue}></div>
+          <div className={styles.circlePurple}></div>
+        </div>
         <div className={styles.panel}>
           <p>Oficial Website</p>
           <p>©</p>
@@ -58,22 +116,6 @@ export default function Inicio() {
           className={`${styles.music} ${isVisible ? styles.visible : ''}`}
           ref={musicRef}
         >
-          <div className={styles.gratidao}>
-            <div className={styles.fechamento}>
-              <img
-                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774495/dirty/graphics/gc3voukixodr0sdhjb45.png"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774477/dirty/graphics/cj9kycqc5egc0lvygzvc.png"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774449/dirty/graphics/ksfltlaxri5rxddzimku.png"
-                alt=""
-              />
-            </div>
-          </div>
           <div className={styles.card}>
             <div className={styles.firstColumn}>
               <div className={styles.descriptions}>
@@ -108,7 +150,7 @@ export default function Inicio() {
           </div>
         </div>
 
-        <div className={styles.bio}>
+        {/* <div className={styles.bio}>
           <div className={styles.logoOne}>
             <img src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1725775445/dirty/graphics/vgv9moarfxjnfcibzzhs.png" />
           </div>
@@ -139,6 +181,63 @@ export default function Inicio() {
               eletrônica, elevando-a a uma expressão de arte e transformação.
             </p>
           </div>
+        </div> */}
+        <div className={styles.bio}>
+          <div className={styles.firstRow}>
+            <div className={styles.img}>
+              <img
+                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1732758145/dirty/graphics/bvjxln020lpmlvkifqyz.jpg"
+                alt=""
+              />
+            </div>
+
+            <div className={styles.text}>
+              <div className={styles.title}>
+                <img
+                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1732758668/dirty/graphics/t5vvfiryyxhszmf5nrts.png"
+                  alt=""
+                />
+                <div className={styles.subtitle}>
+                  <p>VITOR</p>
+                  <p>-</p>
+                  <p>BRAZILIAN</p>
+                </div>
+              </div>
+
+              <div className={styles.description}>
+                <p>
+                  Como marca de psytrance, a filosofia do Dirty Distortion é uma fusão de
+                  profundidade psicológica e sofisticação musical. Inspirado pela
+                  psicologia de Carl Jung, ele concebe sua música como um veículo para
+                  explorar os recantos mais sombrios da mente humana. Sua abordagem
+                  transcende a mera criação de música de dança, tornando-se um convite
+                  para uma jornada interior.
+                  <br />
+                  Cada batida pulsante e cada melodia hipnótica são cuidadosamente
+                  elaboradas para evocar uma experiência transformadora, desafiando os
+                  ouvintes a confrontar seus próprios arquétipos da sombra. Este não é
+                  apenas entretenimento, mas uma busca séria pela autoconsciência e
+                  crescimento pessoal.
+                  <br />
+                  Cada faixa é um produto exclusivo, elaborado com atenção meticulosa aos
+                  detalhes, destinado a criar um espaço sagrado onde a música se funde com
+                  a psique. Neste domínio sombrio e sofisticado, os ouvintes são
+                  convidados a explorar os abismos de suas próprias mentes, enfrentando
+                  seus medos mais profundos e descobrindo a luz na escuridão. Assim, Dirty
+                  não apenas define novos padrões no mundo do psytrance, mas também
+                  desafia os limites da música eletrônica, elevando-a a uma expressão de
+                  arte e transformação.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className={styles.secondRow}>
+            <img
+              src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730802432/dollmaker/newUpgrade/s11bjve9r7wd6ftavcx3.png"
+              alt=""
+            />
+          </div> */}
         </div>
 
         <div className={styles.cta}>
@@ -154,7 +253,10 @@ export default function Inicio() {
             </div>
 
             <div className={styles.colTwo}>
-              <div className={styles.contacts}>
+              <div
+                ref={contatoRef}
+                className={styles.contacts}
+              >
                 <h2>Contatos</h2>
                 <div className={styles.contact}>
                   <div className={styles.wpp}>
