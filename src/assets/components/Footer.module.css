@@ -12,12 +12,54 @@
   display: flex;
   justify-content: space-between;
 }
-
+.pages .brothers {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
 .pages .page {
   display: flex;
   flex-direction: column;
   gap: 22px;
   cursor: pointer;
+}
+.pages .other {
+  display: flex;
+  gap: 110px;
+}
+.other .cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 286px;
+}
+.other .cta h2 {
+  font-stretch: expanded;
+}
+.other .cta p {
+  text-align: justify;
+  font-stretch: expanded;
+  font-weight: 300;
+}
+.other .cta .button {
+  border: none;
+  background: transparent;
+}
+.other .cta .button:hover {
+  background: rgba(255, 255, 255 0.8);
+  border-bottom: 1px solid white;
+  padding: 12px 0;
+}
+.other .marca:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.cta .button a {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  text-decoration: none;
+  font-stretch: expanded;
+  font-size: 16px;
 }
 
 .footer .copy {
@@ -27,7 +69,8 @@
 }
 
 .copy p {
-  text-align: center;
+  font-stretch: expanded;
+  text-align: end;
   font-size: 12px;
 }
 
@@ -35,10 +78,66 @@
   .footer {
     padding: 0 64px;
   }
+  .pages .other {
+    gap: 34px;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .footer {
     padding: 0 16px !important;
+  }
+  .pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 auto;
+    gap: 64px;
+    width: 570px;
+  }
+  .pages .brothers {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .pages .other {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pages {
+    width: 358px;
+  }
+
+  .pages .other {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .other .cta {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .other .cta .button {
+    object-fit: contain;
+  }
+
+  .other .cta .button a {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .copy p {
+    text-align: center;
   }
 }

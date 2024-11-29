@@ -53,12 +53,13 @@
 }
 
 .cards .card {
-  width: 400px;
-  padding: 22px 12px;
+  width: 274px;
+  padding: 12px 12px;
   border-radius: 8px;
   background: linear-gradient(180deg, #000 0%, #242020 100%);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 32px;
   align-items: center;
   text-align: center;
@@ -75,8 +76,9 @@
 }
 
 .card .fotoMusic {
-  width: 100%;
-  height: 329px;
+  width: 250px;
+  height: 250px;
+
   border-radius: 8px;
   background: #fff;
   background-size: cover;
@@ -87,9 +89,22 @@
   font-stretch: expanded;
 }
 
+.cards audio::-webkit-media-controls-time-remaining-display,
+.cards audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+.cards audio::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
 .descMusic h2 {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 500;
+}
+.descMusic p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #aeaeae;
 }
 @media screen and (max-width: 400px) {
   .hero {
@@ -101,7 +116,10 @@
     padding: 0 16px;
     gap: 32px !important;
   }
-
+  .cards .card {
+    width: 100%;
+    padding: 22px 12px;
+  }
   .descMusic h2 {
     font-size: 18px;
   }

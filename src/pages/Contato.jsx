@@ -11,75 +11,59 @@ export default function Contato() {
   return (
     <div className={styles.bg}>
       <div className={styles.content}>
-        <div className={styles.colOne}>
-          <h2>Olá, Produtores de Eventos e Profissionais da Música!</h2>
-          <p>
-            Se você está em busca de um DJ que transforma qualquer evento em uma jornada
-            psicodélica inesquecível, você veio ao lugar certo. Especializado em
-            Progressive Trance ao Techno, minha missão é criar sets hipnóticos e
-            energéticos que elevam o público a um estado de êxtase coletivo.
-          </p>
-        </div>
-
-        <div className={styles.colTwo}>
-          <div className={styles.talk}>
-            <h2>Vamos Conversar?</h2>
-            <p>
-              Eleve seu próximo evento a um novo patamar ou se desejar discutir uma
-              parceria que vai marcar a cena do Psy Trance, entre em contato comigo! Estou
-              ansioso para ouvir suas ideias e colaborar para criar algo realmente
-              especial.
-            </p>
-          </div>
-
-          <div className={styles.contato}>
-            <h2>Contatos</h2>
-
-            <div className={styles.row}>
-              <div className={styles.info}>
-                <div className={styles.title}>
-                  <WhatsappLogo size={32} />
-                  <h2>WhatsApp</h2>
-                </div>
-                <p>(41) 99999-9999</p>
-              </div>
-
-              <div className={styles.info}>
-                <div className={styles.title}>
-                  <Envelope size={32} />
-                  <h2>E-mail</h2>
-                </div>
-                <p>email@dirty.com</p>
-              </div>
+      <div className={styles.contact}>
+          <div className={styles.rows}>
+            <div className={styles.rowOne}>
+              <img
+                src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1732815104/contato_pwvqpv.png"
+                alt=""
+              />
             </div>
-
             <div className={styles.rowTwo}>
-              <p>Redes sociais/Plataformas musicais</p>
-              <div className={styles.icons}>
-                <a
-                  href="https://www.instagram.com/dirty_distortionprog/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.instagramLink}
-                >
-                  <InstagramLogo size={32} />
-                </a>
-                <a
-                  href="https://soundcloud.com/dirty-distortion/tracks"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.instagramLink}
-                >
-                  <SoundcloudLogo size={32} />
-                </a>
-                <a
-                  href="https://open.spotify.com/intl-pt/artist/2a8tqbHESJJc33xwGQ6bLA?si=94ced59a902d40c0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.instagramLink}
-                >
-                  <SpotifyLogo size={32} />
-                </a>
+              <div className={styles.colOne}>
+                <div className={styles.desc}>
+                  <p>
+                    Se você está pronto para levar seu próximo evento a um novo patamar ou
+                    deseja discutir uma parceria que vai marcar a cena do Psy Trance,
+                    entre em contato comigo! Estou ansioso para ouvir suas ideias e
+                    colaborar para criar algo realmente especial.
+                  </p>
+                </div>
+                <div className={styles.img}>
+                  <img
+                    src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1732815104/dirtyTexture_1_wfo9wt.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className={styles.colTwo}>
+                <img
+                  src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1732815103/card_alesra.png"
+                  alt=""
+                />
+                <div className={styles.sociaiss}>
+                  <p>Redes sociais/Plataformas músicais</p>
+                  <div className={styles.icones}>
+                    <a
+                      href="https://www.instagram.com/dirty_distortionprog/"
+                      target="_blank"
+                    >
+                      <InstagramLogo size={32} />
+                    </a>
+                    <a
+                      href="https://soundcloud.com/dirty-distortion/tracks"
+                      target="_blank"
+                    >
+                      <SoundcloudLogo size={32} />
+                    </a>
+                    <a
+                      href="https://open.spotify.com/artist/2a8tqbHESJJc33xwGQ6bLA?si=94ced59a902d40c0&nd=1&dlsi=47e94d31e29f4940"
+                      target="_blank"
+                    >
+                      <SpotifyLogo size={32} />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

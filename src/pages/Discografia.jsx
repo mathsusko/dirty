@@ -12,7 +12,7 @@ const musicData = [
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774531/dirty/graphics/d0jkvpen8kkrmeyqzgd7.png',
     soundcloudUrl:
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774567/dirty/graphics/tnksqzynkxusedahluv5.png',
-    audioUrl: '../src/assets/audio/Dollmaker - On My Time (original Mix).mp3',
+    audioUrl: 'https://res.cloudinary.com/dio2dnpmn/video/upload/v1725775664/dirty/sounds/kpypn4oy0hggq036pgif.mp3',
     spotify:
       'https://open.spotify.com/intl-pt/artist/2a8tqbHESJJc33xwGQ6bLA?si=b9fa2df4257e4a74',
     sound:
@@ -27,7 +27,7 @@ const musicData = [
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774531/dirty/graphics/d0jkvpen8kkrmeyqzgd7.png',
     soundcloudUrl:
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774567/dirty/graphics/tnksqzynkxusedahluv5.png',
-    audioUrl: '../src/assets/audio/Dezko-Ascend-DollmakerBootleg.mp3',
+    audioUrl: 'https://res.cloudinary.com/dio2dnpmn/video/upload/v1725775711/dirty/sounds/mgdps1m3w9grxhgyitzm.mp3',
     spotify:
       'https://open.spotify.com/intl-pt/artist/2a8tqbHESJJc33xwGQ6bLA?si=b9fa2df4257e4a74',
     sound:
@@ -42,7 +42,7 @@ const musicData = [
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774531/dirty/graphics/d0jkvpen8kkrmeyqzgd7.png',
     soundcloudUrl:
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774567/dirty/graphics/tnksqzynkxusedahluv5.png',
-    audioUrl: '../src/assets/audio/Dollmaker - Just Sound - Complete Version.mp3',
+    audioUrl: 'https://res.cloudinary.com/dio2dnpmn/video/upload/v1725775695/dirty/sounds/aw2zsmndxcdv0gwt6v5g.mp3',
     spotify:
       'https://open.spotify.com/intl-pt/artist/2a8tqbHESJJc33xwGQ6bLA?si=b9fa2df4257e4a74',
     sound:
@@ -57,7 +57,7 @@ const musicData = [
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774531/dirty/graphics/d0jkvpen8kkrmeyqzgd7.png',
     soundcloudUrl:
       'https://res.cloudinary.com/dio2dnpmn/image/upload/v1725774567/dirty/graphics/tnksqzynkxusedahluv5.png',
-    audioUrl: '../src/assets/audio/Dollmaker - No Light (Mashup Project).mp3',
+    audioUrl: 'https://res.cloudinary.com/dio2dnpmn/video/upload/v1725775695/dirty/sounds/aw2zsmndxcdv0gwt6v5g.mp3',
     spotify:
       'https://open.spotify.com/intl-pt/artist/2a8tqbHESJJc33xwGQ6bLA?si=b9fa2df4257e4a74',
     sound:
