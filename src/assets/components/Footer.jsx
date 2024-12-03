@@ -15,7 +15,9 @@ export default function Footer() {
   const handleInsta = () =>
     (window.location.href = 'https://www.instagram.com/dirty_distortionprog/')
   // const handleYoutube = () => (window.location.href = 'https://www.youtube.com/@dollmaker626')
-  const handleSpotify = () => (window.location.href = 'https://open.spotify.com/artist/2a8tqbHESJJc33xwGQ6bLA?si=94ced59a902d40c0&nd=1&dlsi=47e94d31e29f4940')
+  const handleSpotify = () =>
+    (window.location.href =
+      'https://open.spotify.com/artist/2a8tqbHESJJc33xwGQ6bLA?si=94ced59a902d40c0&nd=1&dlsi=47e94d31e29f4940')
   const handleSoundcloud = () =>
     (window.location.href = 'https://soundcloud.com/dirty-distortion/tracks')
 
@@ -34,11 +36,25 @@ export default function Footer() {
 
             <div className={styles.page}>
               <h2>Redes</h2>
-              <p onClick={handleInsta}>Instagram</p>
+              <p
+                onClick={handleInsta}
+                target="_blank"
+              >
+                Instagram
+              </p>
               {/* <p onClick={handleYoutube}>Youtube</p> */}
-              <p onClick={handleSpotify}>Spotify</p>
-              <p onClick={handleSoundcloud}>SoundCloud</p>
-              
+              <p
+                onClick={handleSpotify}
+                target="_blank"
+              >
+                Spotify
+              </p>
+              <p
+                onClick={handleSoundcloud}
+                target="_blank"
+              >
+                SoundCloud
+              </p>
             </div>
           </div>
 
@@ -50,7 +66,10 @@ export default function Footer() {
                 comunicação entre os envolvidos.
               </p>
               <button className={styles.button}>
-                <a href="https://www.instagram.com/dgorganism/" target="_blank">
+                <a
+                  href="https://www.instagram.com/dgorganism/"
+                  target="_blank"
+                >
                   CONTRATAR SERVIÇOS{' '}
                   <img
                     src="https://res.cloudinary.com/dio2dnpmn/image/upload/v1730258442/ARROW_f0fpaf.png"
